@@ -112,7 +112,7 @@ These follow the pattern of:
 usernames: other1, other2, etc.  
 password: other1pass, other2pass, etc.
 
-With the users other1 to other 10 being enabled for your testing purposes.
+With the users other1 to other10 being enabled for your testing purposes.
 
 If you authenticate correctly you'll be redirected back to your test application with the user attributes provided:
 
