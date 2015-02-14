@@ -38,7 +38,7 @@ To install using composer you need to do the following:
    `cp config-templates/{config,authsources}.php config/`  
    `cp metadata-templates/saml20-idp-remote.php metadata/`  
    `cd ../../../www`  
-   `ln -s ../vendor/simplesamlphp/simplesamlphp/www .`
+   `ln -s ../vendor/simplesamlphp/simplesamlphp/www saml`
 
 [2]: https://getcomposer.org/
 

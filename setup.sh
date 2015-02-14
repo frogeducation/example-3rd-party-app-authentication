@@ -19,5 +19,5 @@ mkdir {config,metadata}
 cp config-templates/{config,authsources}.php config/
 cp metadata-templates/saml20-idp-remote.php metadata/
 cd ../../../www
-ln -s ../vendor/simplesamlphp/simplesamlphp/www .
+ln -s ../vendor/simplesamlphp/simplesamlphp/www saml
 
