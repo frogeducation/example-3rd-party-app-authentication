@@ -94,8 +94,8 @@ Testing The App
 We have three boxes setup for you to develop against:  
 
 Development Frog Federation: [https://federation-misc.frogosdev.co.uk/][5]  
-Example Secondary School: [https://secondaryexternal-misc.frogosdev.co.uk/][6]  
-Example Primary School: [https://primaryexternal-misc.frogosdev.co.uk/][7]  
+Example Secondary School: [https://secondaryexternal-misc.frogtest.co.uk/][6]  
+Example Primary School: [https://primaryexternal-misc.frogtest.co.uk/][7]  
 
 In your browser go to: https://your-domain.com/  
 Provided a correct server software setup this should run the provided index.php and re-direct you to a selection page on [https://federation-misc.frogosdev.co.uk/][5] which will look like the following:  
@@ -119,5 +119,5 @@ If you authenticate correctly you'll be redirected back to your test application
 ![](https://openmerchantaccount.com/img/frogeducation-simplesaml-development-user-attributes.png)
 
 [5]: https://federation-misc.frogosdev.co.uk/
-[6]: https://secondaryexternal-misc.frogosdev.co.uk/
-[7]: https://primaryexternal-misc.frogosdev.co.uk/
+[6]: https://secondaryexternal-misc.frogtest.co.uk/
+[7]: https://primaryexternal-misc.frogtest.co.uk/
