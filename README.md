@@ -73,10 +73,10 @@ The next step is to configure SimpleSAMLPHP. We have provided example configurat
 Further documentation on the SimpleSAMLPHP config file can be found [here][4]
 
 The two other files you need are `simplesamlphp/config/authsources.php` and `simplesamlphp/metadata/saml20-idp-remote.php`.  
-The examples provided under `frog-federation/config/authsources.php` and `frog-federation/metadata/saml20-sp-remote.php` will work with the development federation provided by frog (mentioned later).  
+The examples provided under `frog-federation/config/authsources.php` and `frog-federation/metadata/saml20-idp-remote.php` will work with the development federation provided by frog (mentioned later).  
 To use these simply run the following:  
 `cp frog-federation/config/authsources.php simplesamlphp/config/authsources.php`  
-`cp frog-federation/metadata/saml20-sp-remote.php simplesamlphp/metadata/saml20-idp-remote.php`
+`cp frog-federation/metadata/saml20-idp-remote.php simplesamlphp/metadata/saml20-idp-remote.php`
 
 ***Please Note***: The authsources.php and saml20-idp-remote.php provided are for development against the frog **development** federation. When configuring your application against the production federation these will require changes. Please contact the Partners support team at FrogEducation to acquire these and setup your application against the production federation.
 
