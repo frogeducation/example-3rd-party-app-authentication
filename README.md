@@ -98,15 +98,23 @@ Example Secondary School: [https://secondaryexternal-misc.frogosdev.co.uk/][6]
 Example Primary School: [https://primaryexternal-misc.frogosdev.co.uk/][7]  
 
 In your browser go to: https://your-domain.com/  
-Provided a correct server software setup this should run the provided index.php and re-direct you to a selection page on [https://federation-misc.frogosdev.co.uk/][5] which will look like the following:  
+Provided a correct server software setup this should run the provided index.php and re-direct you to a discovery page on [https://federation-misc.frogosdev.co.uk/][5] which will look like the following:  
 
-![](https://openmerchantaccount.com/img/frogeducation-simplesaml-development-discovery.png)
+![Federation Discovery](readme-images/federation-discovery.png?raw=true "Federation Discovery")
 
-Select the type of FrogLearn instance you'd like to test login with, and you'll be transferred to the correct instance for authentication:
+You can either select "FrogLearn" or "FrogID". FrogLearn will provide you with a search option to find the relevant school. You can search here for either "Primary" or "Secondary" for example Primary and Secondary FrogLearn instances
 
-![](https://openmerchantaccount.com/img/frogeducation-simplesaml-development-froglearn.png)
+![Federation Discovery Search](readme-images/federation-discovery-search.png?raw=true "Federation Discovery Search")
 
-We have provided 10 users for authentication with these boxes:  
+FrogID is a service Frog provides in a production environment at FrogIdentity.com for users not using FrogLearn to use a account with third party services. It is down to the third party to allow or deny users from this service. For this development environment this is available at: https://frogidentity-misc.frogosdev.co.uk/
+
+If you require accounts of all the school profile types we provide, please use this demo FrogID service to create accounts of each type. The schools available for signup on FrogID are the same as those available on the demo discovery page above.
+
+To proceed, select the type of FrogLearn instance you'd like to test login with, and you'll be transferred to the correct instance for authentication:
+
+![FrogOS Login](readme-images/frogid-login.png?raw=true "FrogOS Login")
+
+We have provided 10 example users for authentication on the Primary and Secondary boxes:  
 These follow the pattern of:  
 
 usernames: other1, other2, etc.  
@@ -116,7 +124,11 @@ With the users other1 to other10 being enabled for your testing purposes.
 
 If you authenticate correctly you'll be redirected back to your test application with the user attributes provided:
 
-![](https://openmerchantaccount.com/img/frogeducation-simplesaml-development-user-attributes.png)
+![3rd Party App Attributes](readme-images/3rd-party-app-attributes.png?raw=true "3rd Party App Attributes")
+
+When using these accounts, you will be presented with a screen upon first login for the user to agree for your application to receive their attributes. This also shows your Terms & Conditions screen for the user to agree to these as well. Please ensure they format correctly in the provided space.
+
+![Attribute Agreement](readme-images/federation-attribute-agreement.png?raw=true "Attribute Agreement")
 
 [5]: https://federation-misc.frogosdev.co.uk/
 [6]: https://secondaryexternal-misc.frogosdev.co.uk/
