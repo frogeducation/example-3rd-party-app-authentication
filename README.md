@@ -38,7 +38,7 @@ To install using composer you need to do the following:
    `cp config-templates/{config,authsources}.php config/`  
    `cp metadata-templates/saml20-idp-remote.php metadata/`  
    `cd ../../../www`  
-   `ln -s ../vendor/simplesamlphp/simplesamlphp/www .`
+   `ln -s ../vendor/simplesamlphp/simplesamlphp/www saml`
 
 [2]: https://getcomposer.org/
 
@@ -73,10 +73,10 @@ The next step is to configure SimpleSAMLPHP. We have provided example configurat
 Further documentation on the SimpleSAMLPHP config file can be found [here][4]
 
 The two other files you need are `simplesamlphp/config/authsources.php` and `simplesamlphp/metadata/saml20-idp-remote.php`.  
-The examples provided under `frog-federation/config/authsources.php` and `frog-federation/metadata/saml20-sp-remote.php` will work with the development federation provided by frog (mentioned later).  
+The examples provided under `frog-federation/config/authsources.php` and `frog-federation/metadata/saml20-idp-remote.php` will work with the development federation provided by frog (mentioned later).  
 To use these simply run the following:  
 `cp frog-federation/config/authsources.php simplesamlphp/config/authsources.php`  
-`cp frog-federation/metadata/saml20-sp-remote.php simplesamlphp/metadata/saml20-idp-remote.php`
+`cp frog-federation/metadata/saml20-idp-remote.php simplesamlphp/metadata/saml20-idp-remote.php`
 
 ***Please Note***: The authsources.php and saml20-idp-remote.php provided are for development against the frog **development** federation. When configuring your application against the production federation these will require changes. Please contact the Partners support team at FrogEducation to acquire these and setup your application against the production federation.
 
@@ -91,11 +91,12 @@ So that your app will work with the Frog Development Federation you will need to
 
 Testing The App
 ===============
-We have three boxes setup for you to develop against:  
+We have four boxes setup for you to develop against:  
 
 Development Frog Federation: [https://federation-misc.frogosdev.co.uk/][5]  
-Example Secondary School: [https://secondaryexternal-misc.frogosdev.co.uk/][6]  
-Example Primary School: [https://primaryexternal-misc.frogosdev.co.uk/][7]  
+Example Secondary School: [https://secondaryexternal-misc.frogtest.co.uk/][6]  
+Example Primary School: [https://primaryexternal-misc.frogtest.co.uk/][7]  
+Development Frog Identity: [https://frogidentity-misc.frogosdev.co.uk/][8]
 
 In your browser go to: https://your-domain.com/  
 Provided a correct server software setup this should run the provided index.php and re-direct you to a discovery page on [https://federation-misc.frogosdev.co.uk/][5] which will look like the following:  
@@ -131,5 +132,6 @@ When using these accounts, you will be presented with a screen upon first login 
 ![Attribute Agreement](readme-images/federation-attribute-agreement.png?raw=true "Attribute Agreement")
 
 [5]: https://federation-misc.frogosdev.co.uk/
-[6]: https://secondaryexternal-misc.frogosdev.co.uk/
-[7]: https://primaryexternal-misc.frogosdev.co.uk/
+[6]: https://secondaryexternal-misc.frogtest.co.uk/
+[7]: https://primaryexternal-misc.frogtest.co.uk/
+[8]: https://frogidentity-misc.frogosdev.co.uk/
